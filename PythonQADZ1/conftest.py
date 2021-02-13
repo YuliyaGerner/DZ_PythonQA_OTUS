@@ -5,7 +5,7 @@ import pytest
 @pytest.fixture(scope='module')
 def setup_companies_list():
     """Список с компаниями"""
-    return ['microsoft', 'google', 'oracle', 'apple', 'ibm']
+    return ['microsoft', 'google', 'oracle', 'apple', 'google']
 
 
 @pytest.fixture(scope='module')

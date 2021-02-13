@@ -5,7 +5,7 @@ import pytest
 @pytest.mark.list
 def test_list_count(setup_companies_list):
     """Проверка сколько раз был добавлен элемент в списке"""
-    assert setup_companies_list.count('ibm') == 2
+    assert setup_companies_list.count('google') == 2
 
 
 @pytest.mark.list
@@ -20,7 +20,7 @@ def test_list_append(setup_figures_list):
 @pytest.mark.list
 def test_list_index(setup_companies_list):
     """Проверка индекса элемента"""
-    assert setup_companies_list.index('apple') == 0
+    assert setup_companies_list.index('microsoft') == 0
 
 
 @pytest.mark.list
@@ -33,14 +33,14 @@ def test_list_clear(setup_figures_list):
 @pytest.mark.list
 def test_list_remove(setup_companies_list):
     """Проверка списка после удаления элемента"""
-    setup_companies_list.remove('ibm')
-    assert setup_companies_list == ['microsoft', 'google', 'oracle', 'apple', 'ibm']
+    setup_companies_list.remove('google')
+    assert setup_companies_list == ['microsoft', 'oracle', 'apple', 'google']
 
 
 TESTDATA = [
-    (['microsoft', 'google', 'oracle', 'apple', 'ibm'], 'ibm', 3),
-    (['microsoft', 'google', 'oracle', 'apple', 'ibm'], 'apple', 0),
-    (['microsoft', 'google', 'oracle', 'apple', 'ibm'], 'microsoft', 2),
+    (['microsoft', 'oracle', 'apple', 'google'], 'google', 3),
+    (['microsoft', 'oracle', 'apple', 'google'], 'microsoft', 0),
+    (['microsoft', 'oracle', 'apple', 'google'], 'apple', 2),
 ]
 
 

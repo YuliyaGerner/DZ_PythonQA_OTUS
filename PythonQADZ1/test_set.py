@@ -5,7 +5,7 @@ import pytest
 @pytest.mark.sets
 def test_set_join(setup_set_veggies):
     """Проверка строки после присоединения к ней другой"""
-    assert ('carrot' in setup_set_veggies) == 0
+    assert ('banana' in setup_set_veggies) == 0
 
 
 @pytest.mark.sets
@@ -39,7 +39,7 @@ def test_set_append():
 
 TESTDATA = [
     ({'foo', 'bar'}, None),
-    ({'trololo'}, None),
+    ({'trelolo'}, None),
 ]
 
 

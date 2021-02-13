@@ -35,7 +35,7 @@ def test_string_count(setup_string_example):
 
 TESTDATA = [
     ('ololo', 'lalala', 11),
-    ('привет', 'Boris', 12),
+    ('привет', 'Borus', 12),
     ('привет', '1111', 10),
 ]
 
